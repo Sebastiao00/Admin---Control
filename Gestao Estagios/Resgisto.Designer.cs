@@ -42,7 +42,7 @@
             this.txt_Username = new System.Windows.Forms.TextBox();
             this.txt_password = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
-            this.txt_telemovel = new System.Windows.Forms.TextBox();
+            this.txt_pass2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -144,7 +144,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox2.Image = global::Gestao_Estagios.Properties.Resources.ada;
+            this.pictureBox2.Image = global::Gestao_Estagios.Properties.Resources.background_page1;
             this.pictureBox2.Location = new System.Drawing.Point(0, 447);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(381, 109);
@@ -159,9 +159,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(64, 416);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(155, 16);
+            this.label5.Size = new System.Drawing.Size(131, 16);
             this.label5.TabIndex = 39;
-            this.label5.Text = "Telemovel (opcional)";
+            this.label5.Text = "Confirm Password";
             // 
             // label4
             // 
@@ -170,9 +170,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(64, 367);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 16);
+            this.label4.Size = new System.Drawing.Size(75, 16);
             this.label4.TabIndex = 37;
-            this.label4.Text = "Palavra-Passe";
+            this.label4.Text = "Password";
             // 
             // label3
             // 
@@ -199,6 +199,7 @@
             this.txt_password.PasswordChar = '•';
             this.txt_password.Size = new System.Drawing.Size(229, 20);
             this.txt_password.TabIndex = 44;
+            this.txt_password.TextChanged += new System.EventHandler(this.txt_password_TextChanged);
             // 
             // txt_email
             // 
@@ -208,16 +209,17 @@
             this.txt_email.TabIndex = 45;
             this.txt_email.TextChanged += new System.EventHandler(this.txt_email_TextChanged);
             // 
-            // txt_telemovel
+            // txt_pass2
             // 
-            this.txt_telemovel.Location = new System.Drawing.Point(67, 434);
-            this.txt_telemovel.Name = "txt_telemovel";
-            this.txt_telemovel.Size = new System.Drawing.Size(229, 20);
-            this.txt_telemovel.TabIndex = 46;
+            this.txt_pass2.Location = new System.Drawing.Point(67, 434);
+            this.txt_pass2.Name = "txt_pass2";
+            this.txt_pass2.PasswordChar = '•';
+            this.txt_pass2.Size = new System.Drawing.Size(229, 20);
+            this.txt_pass2.TabIndex = 46;
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(120)))), ((int)(((byte)(152)))));
+            this.button2.BackColor = System.Drawing.Color.Black;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(90)))), ((int)(((byte)(114)))));
             this.button2.FlatAppearance.BorderSize = 2;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(161)))), ((int)(((byte)(197)))));
@@ -228,7 +230,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(181, 32);
             this.button2.TabIndex = 47;
-            this.button2.Text = "Login";
+            this.button2.Text = "Rigister";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -267,13 +269,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(381, 556);
             this.Controls.Add(this.rg_last);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.txt_telemovel);
+            this.Controls.Add(this.txt_pass2);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_Username);
@@ -311,7 +313,7 @@
         private System.Windows.Forms.TextBox txt_Username;
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.TextBox txt_email;
-        private System.Windows.Forms.TextBox txt_telemovel;
+        private System.Windows.Forms.TextBox txt_pass2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label6;

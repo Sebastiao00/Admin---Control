@@ -13,7 +13,7 @@ namespace Gestao_Estagios
 {
     public partial class Resgisto : Form
     {
-        MySqlConnection conn = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;database=gestaoestagio2;");
+        MySqlConnection conn = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password='';database=project;");
         public Resgisto()
         {
             InitializeComponent();
@@ -24,6 +24,27 @@ namespace Gestao_Estagios
             this.Hide();
             Login Login = new Login();
             Login.ShowDialog();
+        }
+
+        private void register()
+        {
+
+            //vai inserir os dados do utilizador na base de dados
+            txt_password.Text = Encrypt.EncryptHN(txt_password.Text);
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand("insert into utilizadores (ut_email, ut_first, ut_last, ut_pass, ut_admin) values ( '" + txt_email.Text + "', '" + txt_Username.Text + "', '" + rg_last.Text + "', '" + txt_password.Text + "', 0)", conn);
+            cmd.ExecuteNonQuery();
+
+
+            MessageBox.Show("Bem vindo");
+
+            this.Hide();
+            Form1 form1 = new Form1();
+            // vai esconder secções do menustrip
+            form1.iconButton4.Visible = false;
+            form1.ShowDialog();
+            conn.Close();
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,24 +59,21 @@ namespace Gestao_Estagios
             {
                 conn.Close();
                 MessageBox.Show("Preencha os campos  para continuar");
+
             }
             else
             {
-                //vai inserir os dados do utilizador na base de dados
-                txt_password.Text = Encrypt.EncryptHN(txt_password.Text);
-                conn.Open();
-                MySqlCommand cmd = new MySqlCommand("insert into utilizadores (ut_email, ut_first, ut_last, ut_pass, ut_admin) values ('" + txt_Username.Text + "', '" + txt_password.Text + "', '" + txt_email.Text + "', '" + txt_telemovel.Text + "', 'utilizador')", conn);
-                cmd.ExecuteNonQuery();
+                if(txt_password.Text != txt_pass2.Text)
+                {
 
+                    conn.Close();
+                    MessageBox.Show("The keys are different!!!\r\nCheck the fields!!!");
 
-                MessageBox.Show("Bem vindo");
-
-                this.Hide();
-                Form1 form1 = new Form1();
-                // vai esconder secções do menustrip
-                form1.iconButton4.Visible = false;
-                form1.ShowDialog();
-                conn.Close();
+                }
+                else 
+                {
+                    register();
+                }
             }
         }
 
@@ -72,6 +90,11 @@ namespace Gestao_Estagios
         }
 
         private void txt_email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_password_TextChanged(object sender, EventArgs e)
         {
 
         }

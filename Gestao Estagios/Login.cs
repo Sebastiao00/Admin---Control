@@ -15,7 +15,7 @@ namespace Gestao_Estagios
     public partial class Login : Form
     {
         string tipoReader = default;
-        MySqlConnection conn = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password=;database=project;");
+        MySqlConnection conn = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password='';database=project;");
         public Login()
         {
             InitializeComponent();
@@ -37,20 +37,25 @@ namespace Gestao_Estagios
         }*/
         private void login()
         {
-
-            string username = textBoxUsername.Text;
+            /*
+            string email = lg_email.Text;
             string password = Encrypt.EncryptHN(textBoxPassword.Text);
 
-            if (String.IsNullOrEmpty(username) && String.IsNullOrEmpty(password))
+            if (String.IsNullOrEmpty(email) && String.IsNullOrEmpty(password))
+            {
+
                 MessageBox.Show("Os campos têm que ser preenchidos!", "Arquivos EPBJC", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            else if (String.IsNullOrEmpty(username))
+
+            }
+
+            else if (String.IsNullOrEmpty(email))
             {
                 MessageBox.Show("O campo do utilizador não pode estar vazio!", "Arquivos EPBJC", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                this.ActiveControl = textBoxUsername;
+                this.ActiveControl = lg_email;
             }
             else if (String.IsNullOrEmpty(password))
             {
-                MessageBox.Show("O camp da palavra-passe não pode estar vazio!", "Arquivos EPBJC", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("O campo da palavra-passe não pode estar vazio!", "Arquivos EPBJC", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 this.ActiveControl = textBoxPassword;
             }
             else
@@ -59,10 +64,11 @@ namespace Gestao_Estagios
                 //Encripta a palavra-passe
                 string passwordEncrypt = Encryptor.Encrypt(password);
                 */
+            /*
                 //Codigo SQL
-                string query = "SELECT * FROM utilizadores WHERE ut_username = @Username AND ut_password = @Password";
+                string query = "SELECT * FROM utilizadores WHERE ut_email = @email AND ut_password = @Password";
                 MySqlCommand command = new MySqlCommand(query, conn);
-                command.Parameters.AddWithValue("@Username", username);
+                command.Parameters.AddWithValue("@Username", email);
                 command.Parameters.AddWithValue("@Password", password);
 
                 //Cria as variaveis nessesárias
@@ -111,8 +117,9 @@ namespace Gestao_Estagios
 
                 conn.Close();
             }
+            */
         }
-
+            
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
