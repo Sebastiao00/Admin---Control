@@ -16,6 +16,8 @@ namespace Gestao_Estagios
     {
         string tipoReader = default;
         MySqlConnection conn = new MySqlConnection("datasource=127.0.0.1;port=3306;username=root;password='';database=project;");
+        private object Encryptor;
+
         public Login()
         {
             InitializeComponent();
@@ -37,7 +39,7 @@ namespace Gestao_Estagios
         }*/
         private void login()
         {
-            /*
+            
             string email = lg_email.Text;
             string password = Encrypt.EncryptHN(textBoxPassword.Text);
 
@@ -60,34 +62,34 @@ namespace Gestao_Estagios
             }
             else
             {
-                /*
+
                 //Encripta a palavra-passe
-                string passwordEncrypt = Encryptor.Encrypt(password);
-                */
-            /*
+                string passwordEncrypt = Encrypt.EncryptHN(password);
+
+
                 //Codigo SQL
-                string query = "SELECT * FROM utilizadores WHERE ut_email = @email AND ut_password = @Password";
+                string query = "SELECT * FROM utilizadores WHERE ut_email = @email AND ut_pass = @Password";
                 MySqlCommand command = new MySqlCommand(query, conn);
-                command.Parameters.AddWithValue("@Username", email);
+                command.Parameters.AddWithValue("@email", email);
                 command.Parameters.AddWithValue("@Password", password);
 
                 //Cria as variaveis nessesárias
                 MySqlDataReader dataReader;
-                string usernameReader = default;
+                string emailReader = default;
                 string passwordReader = default;
-                //Vai tentar executar o comando
 
+                //Vai tentar executar o comando
                 conn.Open();
                 dataReader = command.ExecuteReader();
 
                 while (dataReader.Read())
                 {
-                    usernameReader = dataReader.GetString("ut_username");
-                    passwordReader = dataReader.GetString("ut_password");
+                    emailReader = dataReader.GetString("ut_email");
+                    passwordReader = dataReader.GetString("ut_pass");
                     tipoReader = dataReader.GetString("tipo");
                 }
                 //Vai verificar se as palavras-passes coicidem
-                if (usernameReader == username && passwordReader == password)
+                if (emailReader == email && passwordReader == password)
                 {
                     //Login
                     this.Hide();
@@ -117,7 +119,7 @@ namespace Gestao_Estagios
 
                 conn.Close();
             }
-            */
+            
         }
             
         private void pictureBox2_Click(object sender, EventArgs e)
