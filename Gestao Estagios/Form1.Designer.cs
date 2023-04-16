@@ -97,7 +97,7 @@
             this.BtnUtilizadores.Dock = System.Windows.Forms.DockStyle.Left;
             this.BtnUtilizadores.FlatAppearance.BorderSize = 0;
             this.BtnUtilizadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnUtilizadores.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUtilizadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnUtilizadores.ForeColor = System.Drawing.Color.White;
             this.BtnUtilizadores.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.BtnUtilizadores.IconColor = System.Drawing.Color.White;
@@ -121,7 +121,7 @@
             this.BtnEmpresas.Dock = System.Windows.Forms.DockStyle.Left;
             this.BtnEmpresas.FlatAppearance.BorderSize = 0;
             this.BtnEmpresas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEmpresas.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEmpresas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEmpresas.ForeColor = System.Drawing.Color.White;
             this.BtnEmpresas.IconChar = FontAwesome.Sharp.IconChar.Building;
             this.BtnEmpresas.IconColor = System.Drawing.Color.White;
@@ -145,7 +145,7 @@
             this.BtnOrientadores.Dock = System.Windows.Forms.DockStyle.Left;
             this.BtnOrientadores.FlatAppearance.BorderSize = 0;
             this.BtnOrientadores.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnOrientadores.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnOrientadores.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnOrientadores.ForeColor = System.Drawing.Color.White;
             this.BtnOrientadores.IconChar = FontAwesome.Sharp.IconChar.PersonChalkboard;
             this.BtnOrientadores.IconColor = System.Drawing.Color.White;
@@ -169,7 +169,7 @@
             this.btnAlunos.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnAlunos.FlatAppearance.BorderSize = 0;
             this.btnAlunos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAlunos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlunos.ForeColor = System.Drawing.Color.White;
             this.btnAlunos.IconChar = FontAwesome.Sharp.IconChar.GraduationCap;
             this.btnAlunos.IconColor = System.Drawing.Color.White;
@@ -191,11 +191,11 @@
             // lblTitleChildForm
             // 
             this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.lblTitleChildForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
             this.lblTitleChildForm.Location = new System.Drawing.Point(50, 31);
             this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(98, 16);
+            this.lblTitleChildForm.Size = new System.Drawing.Size(101, 16);
             this.lblTitleChildForm.TabIndex = 2;
             this.lblTitleChildForm.Text = "Página Inicial";
             this.lblTitleChildForm.Click += new System.EventHandler(this.lblTitleChildForm_Click);
@@ -223,7 +223,7 @@
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panelDesktop.Controls.Add(this.label1);
             this.panelDesktop.Controls.Add(this.label2);
             this.panelDesktop.Controls.Add(this.pictureBox1);
@@ -239,11 +239,11 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(320, 327);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 28);
+            this.label1.Size = new System.Drawing.Size(67, 29);
             this.label1.TabIndex = 8;
             this.label1.Text = "Date";
             // 
@@ -252,11 +252,11 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(392, 299);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 28);
+            this.label2.Size = new System.Drawing.Size(73, 29);
             this.label2.TabIndex = 7;
             this.label2.Text = "Time";
             // 
@@ -277,7 +277,7 @@
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = global::Gestao_Estagios.Properties.Resources.ada;
+            this.pictureBox2.Image = global::Gestao_Estagios.Properties.Resources.background_page1;
             this.pictureBox2.Location = new System.Drawing.Point(0, 385);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(880, 142);
@@ -292,7 +292,7 @@
             // 
             // panelLogo
             // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(117)))), ((int)(((byte)(149)))));
+            this.panelLogo.BackColor = System.Drawing.Color.Black;
             this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
@@ -302,6 +302,7 @@
             // 
             // btnHome
             // 
+            this.btnHome.BackColor = System.Drawing.Color.Black;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
             this.btnHome.Location = new System.Drawing.Point(28, 22);
             this.btnHome.Name = "btnHome";
@@ -331,7 +332,7 @@
             // 
             // panelMenu
             // 
-            this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(117)))), ((int)(((byte)(149)))));
+            this.panelMenu.BackColor = System.Drawing.Color.Black;
             this.panelMenu.Controls.Add(this.iconButton4);
             this.panelMenu.Controls.Add(this.iconButton3);
             this.panelMenu.Controls.Add(this.iconButton2);
@@ -350,7 +351,7 @@
             this.iconButton4.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton4.FlatAppearance.BorderSize = 0;
             this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton4.ForeColor = System.Drawing.Color.White;
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.Database;
             this.iconButton4.IconColor = System.Drawing.Color.White;
@@ -373,7 +374,7 @@
             this.iconButton3.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton3.FlatAppearance.BorderSize = 0;
             this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton3.ForeColor = System.Drawing.Color.White;
             this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.Person;
             this.iconButton3.IconColor = System.Drawing.Color.White;
@@ -396,7 +397,7 @@
             this.iconButton2.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton2.FlatAppearance.BorderSize = 0;
             this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton2.ForeColor = System.Drawing.Color.White;
             this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.ChalkboardTeacher;
             this.iconButton2.IconColor = System.Drawing.Color.White;
@@ -408,7 +409,7 @@
             this.iconButton2.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton2.Size = new System.Drawing.Size(220, 60);
             this.iconButton2.TabIndex = 12;
-            this.iconButton2.Text = "Orientadores";
+            this.iconButton2.Text = "Admin - Utilizadores";
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton2.UseVisualStyleBackColor = true;
@@ -419,7 +420,7 @@
             this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
             this.iconButton1.FlatAppearance.BorderSize = 0;
             this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.iconButton1.ForeColor = System.Drawing.Color.White;
             this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.GraduationCap;
             this.iconButton1.IconColor = System.Drawing.Color.White;
@@ -431,7 +432,7 @@
             this.iconButton1.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.iconButton1.Size = new System.Drawing.Size(220, 60);
             this.iconButton1.TabIndex = 11;
-            this.iconButton1.Text = "Alunos";
+            this.iconButton1.Text = "Utilizadores";
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.iconButton1.UseVisualStyleBackColor = true;

@@ -86,7 +86,7 @@ namespace Gestao_Estagios
                 {
                     emailReader = dataReader.GetString("ut_email");
                     passwordReader = dataReader.GetString("ut_pass");
-                    tipoReader = dataReader.GetString("tipo");
+                    tipoReader = dataReader.GetString("ut_admin");
                 }
                 //Vai verificar se as palavras-passes coicidem
                 if (emailReader == email && passwordReader == password)
@@ -95,12 +95,12 @@ namespace Gestao_Estagios
                     this.Hide();
                     Form1 form1 = new Form1();
                     //vai verificar o tipo de utilizador da conta e dependendo do tipo irá esconder ou mostrar determinadas opções do menu
-                    if (tipoReader == "admin")
+                    if (tipoReader == "1")
                     {
                         form1.iconButton4.Visible = true;
                         form1.ShowDialog();
                     }
-                    else if (tipoReader == "utilizador")
+                    else if (tipoReader == "0")
                     {
                         form1.iconButton4.Visible = false;
                         form1.ShowDialog();
